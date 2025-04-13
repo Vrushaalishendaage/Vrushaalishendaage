@@ -3,47 +3,42 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Vrushali S. - Resume</title>
-
-  <!-- Google Font -->
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet"/>
-
+  <title>Vrushali Shendage - Resume</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
   <style>
     body {
-      font-family: 'Poppins', sans-serif;
-      background-color: #f4f6f8;
-      color: #333;
       margin: 0;
       padding: 0;
+      font-family: 'Poppins', sans-serif;
+      background-color: #f0f4f8;
+      color: #2e2e2e;
     }
 
     .resume-container {
       max-width: 900px;
       margin: 40px auto;
-      background-color: #ffffff;
+      background-color: #fff;
       padding: 40px;
       border-radius: 16px;
-      box-shadow: 0 4px 16px rgba(0,0,0,0.1);
+      box-shadow: 0 8px 20px rgba(0,0,0,0.08);
     }
 
     h1 {
-      text-align: center;
-      font-weight: 700;
-      color: #2b3a67;
+      font-size: 36px;
+      color: #1f3c88;
+      margin-bottom: 0;
     }
 
     .title {
-      text-align: center;
       font-size: 16px;
-      margin-top: -10px;
-      margin-bottom: 40px;
-      color: #666;
+      color: #555;
+      margin-bottom: 30px;
     }
 
     h2 {
-      color: #2b3a67;
-      border-bottom: 2px solid #ddd;
+      border-bottom: 2px solid #e0e0e0;
       padding-bottom: 6px;
+      color: #1f3c88;
       margin-top: 40px;
     }
 
@@ -52,19 +47,25 @@
       margin-top: 20px;
     }
 
+    ul {
+      padding-left: 20px;
+    }
+
     p, li {
-      font-size: 16px;
+      font-size: 15px;
       line-height: 1.6;
     }
 
-    ul {
-      margin-left: 20px;
-      padding-left: 10px;
+    .card-section {
+      background-color: #f9fafc;
+      padding: 20px;
+      border-radius: 12px;
+      margin-top: 20px;
+      border-left: 4px solid #1f3c88;
     }
 
     .references {
       display: flex;
-      flex-wrap: wrap;
       gap: 40px;
       margin-top: 20px;
     }
@@ -72,39 +73,50 @@
     .references div {
       flex: 1;
     }
+
+    .email {
+      color: #0077cc;
+      text-decoration: none;
+    }
+
+    @media (max-width: 600px) {
+      .references {
+        flex-direction: column;
+      }
+    }
   </style>
 </head>
 <body>
   <div class="resume-container">
-    <h1>Vrushali S.</h1>
-    <p class="title">Dentist & Public Health Specialist | your.vrushaalishendaage@gmail.com</p>
+    <h1>Vrushali Shendage</h1>
+    <p class="title">Dentist & Public Health Specialist • your.vrushaalishendaage@gmail.com</p>
 
-    <section>
+    <section class="card-section">
       <h2>Experience</h2>
       <ul>
-        <li><strong>Oralens Healthcare</strong> - Data Annotation Specialist (2024–2025)</li>
-        <li><strong>Dentaword</strong> - Dental Associate and Clinic Manager (2023–2024)</li>
-        <li><strong>Vedikashram</strong> - Oral Health Program Manager (07/2023–09/2023)</li>
-        <li><strong>IKS Healthcare</strong> - Clinical Documentation Specialist (01/2022–12/2022)</li>
+        <li><strong>Oralens Healthcare</strong> – Data Annotation Specialist (2024–2025)</li>
+        <li><strong>Dentaword</strong> – Dental Associate and Clinic Manager (2023–2024)</li>
+        <li><strong>Vedikashram</strong> – Oral Health Program Manager (07/2023–09/2023)</li>
+        <li><strong>IKS Healthcare</strong> – Clinical Documentation Specialist (01/2022–12/2022)</li>
       </ul>
     </section>
 
-    <section>
+    <section class="card-section">
       <h2>Education</h2>
-      <p><strong>Masters of Public Health</strong> – Umea University, Sweden</p>
+      <p><strong>Masters of Public Health</strong> – Umeå University, Sweden</p>
       <p><strong>Bachelors of Dentistry</strong> – Maharashtra University of Health Science, India</p>
     </section>
 
-    <section>
+    <section class="card-section">
       <h2>Skills</h2>
       <ul>
-        <li>Research Methodology, Data Analysis: R, Python</li>
+        <li>Research Methodology, Data Analysis (R, Python)</li>
         <li>Project Management, Communication, Presentation Skills</li>
         <li>Team Collaboration, Critical Thinking</li>
       </ul>
     </section>
 
-    <section>
+    <section class="card-section">
       <h2>Unpublished Research</h2>
       <p><strong>Title:</strong> To evaluate and compare the morphology of soft palate in different stages of OSMF patients and healthy individuals using digital lateral cephalogram.</p>
       <p><strong>Authors:</strong> Vrushali Shendage, Gaurav Verma</p>
@@ -112,68 +124,69 @@
       <p><strong>Status:</strong> Manuscript not for submission</p>
     </section>
 
-    <section>
+    <section class="card-section">
       <h2>Current Research</h2>
-      <p><strong>Title:</strong> Factors associated with Tooth Brushing Habits Among 3-Year–Old Migrant Children in Västerbotten, Sweden: A Population-Based Study</p>
-      <p><strong>Institute:</strong> Umea University</p>
+      <p><strong>Title:</strong> Factors associated with Tooth brushing Habits Among 3-Year–Old Migrant Children in Västerbotten, Sweden: A Population-Based Study</p>
+      <p><strong>Institute:</strong> Umeå University</p>
+      <p><strong>Status:</strong> Data collection phase</p>
     </section>
 
-    <section>
-      <h2>Data Analysis</h2>
-
+    <section class="card-section">
+      <h2>Data Analysis Projects</h2>
       <h3>Titanic: Machine Learning from Disaster</h3>
-      <p><em>Kaggle Competition</em></p>
       <ul>
         <li>Role: Participant</li>
-        <li>Description: Developed predictive models to forecast passenger survival using machine learning algorithms.</li>
-        <li>Achievements: Ranked in the top 15% of participants.</li>
+        <li>Built models to predict survival on the Titanic using ML algorithms</li>
+        <li><strong>Achievement:</strong> Ranked in top 15%</li>
       </ul>
 
       <h3>COVID-19 Data Exploration</h3>
-      <p><em>Kaggle Competition</em></p>
       <ul>
-        <li>Description: Conducted exploratory data analysis (EDA) and built interactive visualizations to analyze the global spread of COVID-19.</li>
-        <li>Tools: Python, Pandas, Matplotlib, Seaborn, Tableau</li>
-        <li>Achievements: Identified key trends and factors affecting case growth rates; shared findings in an interactive dashboard.</li>
+        <li>EDA & visualization of global COVID-19 trends using Tableau</li>
+        <li><strong>Tools:</strong> Python, Pandas, Matplotlib, Seaborn, Tableau</li>
+        <li>Shared insights via interactive dashboards</li>
       </ul>
     </section>
 
-    <section>
+    <section class="card-section">
       <h2>Academic Projects / Reports</h2>
-      <h3>Qualitative Report:</h3>
-      <p>Experience of accessing health care services among children of single mothers in Västerbotten region in Sweden.</p>
+      <h3>Qualitative Report</h3>
+      <p>Experience of accessing healthcare services among children of single mothers in Västerbotten, Sweden.</p>
+
+      <h3>Scoping Review Protocol</h3>
+      <p>Mapping Maternal Interventions to Prevent Stunting in Children Under Five in India (2010–2025).</p>
+
+      <h3>Health Economic Report</h3>
+      <p>Cost-Effectiveness Analysis of Polycap Drug vs. Separate Drugs for Cardiovascular Disease Prevention in India: A Comparative Economic Evaluation.</p>
     </section>
 
-    <section>
+    <section class="card-section">
       <h2>Tools</h2>
       <ul>
-        <li>R</li>
-        <li>Python</li>
-        <li>NVivo</li>
-        <li>Tableau</li>
-        <li>Rayyan</li>
-        <li>EHR, EPIC Software</li>
-        <li>MS Office</li>
-        <li>Figma & Adobe</li>
+        <li>R, Python</li>
+        <li>NVivo, Rayyan</li>
+        <li>EHR, EPIC software</li>
+        <li>MS Office, Figma & Adobe</li>
       </ul>
     </section>
 
-    <section>
+    <section class="card-section">
       <h2>References</h2>
       <div class="references">
         <div>
-          <strong>Eva Selin</strong><br/>
-          Administrator<br/>
-          <em>Email:</em> eva.selin@umu.se
+          <strong>Eva Selin</strong><br>
+          Administrator<br>
+          <a class="email" href="mailto:eva.selin@umu.se">eva.selin@umu.se</a>
         </div>
         <div>
-          <strong>Dipa Nitin Phirake</strong><br/>
-          Project Manager<br/>
-          <em>Email:</em> dipali.phirake@gmail.com
+          <strong>Dipa Nitin Phirake</strong><br>
+          Project Manager<br>
+          <a class="email" href="mailto:dipali.phirake@gmail.com">dipali.phirake@gmail.com</a>
         </div>
       </div>
     </section>
   </div>
 </body>
 </html>
+
 
