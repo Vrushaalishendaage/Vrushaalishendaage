@@ -1,6 +1,3 @@
-# Update the previous HTML to include arrow navigation and section flipping/slide transitions
-
-interactive_resume_html = """
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -17,6 +14,7 @@ interactive_resume_html = """
       padding: 0;
       overflow-x: hidden;
     }
+
     .resume-container {
       width: 100%;
       max-width: 960px;
@@ -31,7 +29,7 @@ interactive_resume_html = """
     .section {
       padding: 40px;
       display: none;
-      animation: fadeIn 1s ease-in-out;
+      animation: fadeIn 0.8s ease-in-out;
     }
 
     .section.active {
@@ -132,50 +130,6 @@ interactive_resume_html = """
     </div>
 
     <div class="section">
-      <h2>Unpublished Research</h2>
-      <p><strong>Title:</strong> To evaluate and compare the morphology of soft palate in different stages of OSMF patients and healthy individuals using digital lateral cephalogram.</p>
-      <p><strong>Authors:</strong> Vrushali Shendage, Gaurav Verma</p>
-      <p><strong>Completion Date:</strong> 10/12/2019</p>
-      <p><strong>Status:</strong> Manuscript not for submission</p>
-    </div>
-
-    <div class="section">
-      <h2>Current Research</h2>
-      <p><strong>Title:</strong> Factors associated with Tooth brushing Habits Among 3-Year–Old Migrant Children in Västerbotten, Sweden: A Population-Based Study</p>
-      <p><strong>Institute:</strong> Umea University</p>
-    </div>
-
-    <div class="section">
-      <h2>Data Analysis Projects</h2>
-      <h3>Titanic: Machine Learning from Disaster</h3>
-      <ul>
-        <li>Role: Participant</li>
-        <li>Ranked in top 15% of participants</li>
-      </ul>
-      <h3>COVID-19 Data Exploration</h3>
-      <ul>
-        <li>Tools: Python, Tableau, Pandas</li>
-        <li>Conducted EDA & created interactive dashboards</li>
-      </ul>
-    </div>
-
-    <div class="section">
-      <h2>Academic Projects / Reports</h2>
-      <ul>
-        <li><strong>Qualitative Report:</strong> Accessing health services among children of single mothers</li>
-        <li><strong>Scoping Review:</strong> Healthcare Access among Migrant Families in Sweden</li>
-        <li><strong>Health Economic Report:</strong> Cost-Effectiveness of Preventive Dental Care</li>
-      </ul>
-    </div>
-
-    <div class="section">
-      <h2>Tools</h2>
-      <ul>
-        <li>R, Python, NVivo, Tableau</li>
-      </ul>
-    </div>
-
-    <div class="section">
       <h2>Courses Undertaken</h2>
       <ul>
         <li>Ethics & Governance – WHO</li>
@@ -200,9 +154,7 @@ interactive_resume_html = """
       </ul>
     </div>
 
-      <section class="section">
-  
-          <div class="nav-arrows">
+    <div class="nav-arrows">
       <button onclick="prevSection()">← Previous</button>
       <button onclick="nextSection()">Next →</button>
     </div>
@@ -232,14 +184,3 @@ interactive_resume_html = """
   </script>
 </body>
 </html>
-"""
-
-# Save the interactive version
-interactive_resume_path = "/mnt/data/vrushali_interactive_resume.html"
-with open(interactive_resume_path, "w", encoding="utf-8") as f:
-    f.write(interactive_resume_html)
-
-interactive_resume_path
-
-
-
